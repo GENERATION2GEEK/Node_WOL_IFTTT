@@ -11,8 +11,8 @@ s.on('request', function(request, response) {
    console.log(request.url);
    if(request.url == "/index.js?action=wol") {
      console.log("Requête Wake On Lan lancée")
-     wol.wake('00:D8:61:58:6A:F4', {
-      address: '78.212.153.180',
+     wol.wake('MAC ADDRESS HERE', {
+      address: '0.0.0.0',
       port: 9
      }, function(error) {
       if(error) {
